@@ -357,7 +357,8 @@ footer nav a {
   .bottom-content,
   .middle-content-about,
   .about-detail,
-  button {
+  button,
+  header {
     flex-flow: wrap column;
     margin: 0 5%;
   }
