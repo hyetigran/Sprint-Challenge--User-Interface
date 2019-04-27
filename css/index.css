@@ -254,6 +254,7 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
+
 /* Box Colors Start */
 .middle-content .boxes .box:nth-of-type(1) {
   background-color: teal;
@@ -286,6 +287,21 @@ button:hover {
   background-color: dodgerblue;
 }
 /* Box Colors End */
+
+/* Box 1 Animation */
+.middle-content .boxes .box:hover {
+  animation: box-spinner 3s 1;
+}
+@keyframes box-spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Box 1 Animation End */
+
 .bottom-content {
   display: flex;
   margin: 0 2% 20px;
