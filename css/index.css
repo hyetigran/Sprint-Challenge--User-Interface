@@ -255,6 +255,53 @@ button:hover {
   justify-content: center;
 }
 
+/* Box Colors Start */
+.middle-content .boxes .box:nth-of-type(1) {
+  background-color: teal;
+}
+.middle-content .boxes .box:nth-of-type(2) {
+  background-color: gold;
+}
+.middle-content .boxes .box:nth-of-type(3) {
+  background-color: cadetblue;
+}
+.middle-content .boxes .box:nth-of-type(4) {
+  background-color: coral;
+}
+.middle-content .boxes .box:nth-of-type(5) {
+  background-color: crimson;
+}
+.middle-content .boxes .box:nth-of-type(6) {
+  background-color: forestgreen;
+}
+.middle-content .boxes .box:nth-of-type(7) {
+  background-color: darkorchid;
+}
+.middle-content .boxes .box:nth-of-type(8) {
+  background-color: hotpink;
+}
+.middle-content .boxes .box:nth-of-type(9) {
+  background-color: indigo;
+}
+.middle-content .boxes .box:nth-of-type(10) {
+  background-color: dodgerblue;
+}
+/* Box Colors End */
+
+/* Box 1 Animation */
+.middle-content .boxes .box:hover {
+  animation: box-spinner 3s 1;
+}
+@keyframes box-spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Box 1 Animation End */
+
 .bottom-content {
   display: flex;
   margin: 0 2% 20px;
@@ -275,30 +322,8 @@ button:hover {
   margin-bottom: 0;
   text-align: center;
   font-size: 40px;
-  animation-name: tag-line;
 }
-@keyframes tag-line {
-  0% {
-    left: 0px;
-    top: 0px;
-  }
-  25% {
-    left: 200px;
-    top: 0px;
-  }
-  50% {
-    left: 200px;
-    top: 200px;
-  }
-  75% {
-    left: 0px;
-    top: 200px;
-  }
-  100% {
-    left: 0px;
-    top: 0px;
-  }
-}
+
 .contact-section {
   display: flex;
   align-content: space-between;
